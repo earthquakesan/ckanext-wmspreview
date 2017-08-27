@@ -1,0 +1,14 @@
+{% extends 'dataviewer/base.html' %}
+
+{% block styles %}
+{% endblock %}
+
+{% block page %}
+<iframe src="http://www.arcgis.com/home/webmap/viewer.html?url=http%3A%2F%2Fwms.leipzig.de%2Farcgis%2Frest%2Fservices%2Fwms%2FBRW%2FMapServer&source=sd" title="iframe example 1" width="100%" height="800">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+{% endblock %}
